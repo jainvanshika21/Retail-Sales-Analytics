@@ -1,3 +1,4 @@
+from pathlib import Path
 import os
 import streamlit as st
 import pandas as pd
@@ -80,7 +81,10 @@ def load_data():
 
     except Exception:
 
-        df = pd.read_csv("../data/cleaned_sales_data.csv")
+        BASE_DIR = Path(__file__).resolve().parent.parent
+        csv_path = BASE_DIR / "data" / "cleaned_sales_data.csv"
+
+        df = pd.read_csv(csv_path)
 
         source = "CSV File"
 
