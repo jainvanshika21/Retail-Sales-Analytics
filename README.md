@@ -6,7 +6,7 @@ The project demonstrates the complete analytics workflow, including data cleanin
 
 ---
 
-## 🚀 Project Overview
+# 🚀 Project Overview
 
 This project analyzes retail sales data to identify sales trends, customer behavior, regional performance, and product profitability through interactive visualizations and dashboards.
 
@@ -21,7 +21,19 @@ The project covers the complete data analytics lifecycle:
 
 ---
 
-## 🛠️ Tech Stack
+# 🌐 Live Demo
+
+### 🚀 Streamlit App
+
+https://retail-sales-analytics-pzliszurmrwxhiwtpxs6ow.streamlit.app/
+
+### 💻 GitHub Repository
+
+https://github.com/jainvanshika21/Retail-Sales-Analytics
+
+---
+
+# 🛠️ Tech Stack
 
 | Technology | Purpose |
 |------------|---------|
@@ -31,16 +43,16 @@ The project covers the complete data analytics lifecycle:
 | Plotly | Interactive Visualizations |
 | Matplotlib | Data Visualization |
 | MySQL | Data Storage & SQL Analysis |
-| SQLAlchemy | Python-MySQL Connection |
+| SQLAlchemy | Database Connection |
 | Power BI | Interactive Dashboard |
-| Streamlit | Web Application |
+| Streamlit | Interactive Web Application |
 | Git & GitHub | Version Control |
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
-```
+```text
 Retail-Sales-Analytics/
 │
 ├── data/
@@ -85,7 +97,7 @@ The dataset contains retail sales transactions with information such as:
 
 # 🐍 Python Workflow
 
-The Python notebook performs:
+The Python notebooks perform:
 
 - Data Loading
 - Data Cleaning
@@ -93,13 +105,13 @@ The Python notebook performs:
 - Duplicate Removal
 - Data Type Conversion
 - Feature Engineering
-- Exploratory Data Analysis
+- Exploratory Data Analysis (EDA)
 - Data Visualization
 - Export Clean Dataset
 
 ### Feature Engineering
 
-Created additional features including:
+Additional features created include:
 
 - Year
 - Quarter
@@ -113,7 +125,7 @@ Created additional features including:
 
 The cleaned dataset is exported to MySQL for business analysis.
 
-The SQL script includes **45 analytical queries**, covering:
+The SQL script contains **45 analytical SQL queries**, including:
 
 - Revenue Analysis
 - Profit Analysis
@@ -130,7 +142,7 @@ The SQL script includes **45 analytical queries**, covering:
 
 # 📈 Power BI Dashboard
 
-The Power BI report contains three interactive dashboards:
+The Power BI report contains **three interactive dashboards**.
 
 ### Dashboard 1 – Executive Overview
 
@@ -156,7 +168,7 @@ The Power BI report contains three interactive dashboards:
 
 # 🌐 Streamlit Dashboard
 
-The Streamlit application provides an interactive analytics dashboard with:
+The Streamlit dashboard provides:
 
 - KPI Metrics
 - Revenue Analysis
@@ -166,8 +178,22 @@ The Streamlit application provides an interactive analytics dashboard with:
 - Product Performance
 - Customer Analysis
 - Interactive Filters
+- CSV Download
 
-The application first attempts to connect to the MySQL database. If the database is unavailable, it automatically loads the cleaned CSV dataset as a fallback.
+The application first attempts to connect to a MySQL database using environment variables. If a database connection is unavailable (such as during cloud deployment), it automatically loads the cleaned CSV dataset, ensuring uninterrupted access to the dashboard.
+
+---
+
+# ☁️ Deployment
+
+The application is deployed on **Streamlit Community Cloud**.
+
+It automatically:
+
+- Connects to the MySQL database when valid environment variables are available.
+- Falls back to the cleaned CSV dataset if the database is unavailable.
+
+This allows the dashboard to work seamlessly in both local and cloud environments.
 
 ---
 
@@ -186,7 +212,7 @@ The application first attempts to connect to the MySQL database. If the database
 ### Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Retail-Sales-Analytics.git
+git clone https://github.com/jainvanshika21/Retail-Sales-Analytics.git
 ```
 
 ### Navigate to the project directory
@@ -220,6 +246,8 @@ streamlit run streamlit/app.py
 - Power BI Dashboard Development
 - Streamlit Application Development
 - Data Visualization
+- Dashboard Design
+- Data Storytelling
 - Git & GitHub
 
 ---
@@ -230,6 +258,8 @@ streamlit run streamlit/app.py
 
 MCA Student | Aspiring Data Analyst
 
+**GitHub:** https://github.com/jainvanshika21
+
 ---
 
-⭐ If you found this project helpful, consider giving it a star.
+⭐ **If you found this project helpful, consider giving it a star!**
