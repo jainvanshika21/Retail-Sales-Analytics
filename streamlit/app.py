@@ -63,9 +63,13 @@ h1,h2,h3{
 def load_data():
 
     try:
-        engine = create_engine(
-    f"mysql+pymysql://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}@{os.getenv('DB_HOST')}/{os.getenv('DB_NAME')}"
-)
+        db_user = os.getenv("DB_USER", "root")
+        db_password = os.getenv("DB_PASSWORD")
+        db_host = os.getenv("DB_HOST", "localhost")
+        db_name = os.getenv("DB_NAME", "sales_project")
+
+        engine = create_engine(f"mysql+pymysql://{db_user}:{db_password}@{db_host}/{db_name}"
+    )
 
         df = pd.read_sql(
             "SELECT * FROM sales_data",
