@@ -139,10 +139,9 @@ The SQL script contains **45 analytical SQL queries**, including:
 - Common Table Expressions (CTEs)
 
 ---
+## 📈 Power BI Dashboard
 
-# 📈 Power BI Dashboard
-
-The Power BI report contains **three interactive dashboards**.
+The Power BI report contains three interactive dashboards designed to provide insights into overall sales performance, regional performance, and customer & product analysis.
 
 ### Dashboard 1 – Executive Overview
 
@@ -151,11 +150,15 @@ The Power BI report contains **three interactive dashboards**.
 - Monthly Profit Trend
 - Sales Overview
 
+![Executive Overview](screenshots/powerbi_dashboard_1.png)
+
 ### Dashboard 2 – Regional Analysis
 
 - Revenue by Region
 - Revenue by State
 - Sales Distribution Map
+
+![Regional Analysis](screenshots/powerbi_dashboard_2.png)
 
 ### Dashboard 3 – Customer & Product Analysis
 
@@ -164,11 +167,18 @@ The Power BI report contains **three interactive dashboards**.
 - Product Profitability
 - Customer Insights
 
+![Customer & Product Analysis](screenshots/powerbi_dashboard_3.png)
+
+
+
+
 ---
 
-# 🌐 Streamlit Dashboard
+## 🌐 Streamlit Dashboard
 
-The Streamlit dashboard provides:
+The Streamlit application provides an interactive interface for exploring key retail sales insights.
+
+Features include:
 
 - KPI Metrics
 - Revenue Analysis
@@ -180,8 +190,9 @@ The Streamlit dashboard provides:
 - Interactive Filters
 - CSV Download
 
-The application first attempts to connect to a MySQL database using environment variables. If a database connection is unavailable (such as during cloud deployment), it automatically loads the cleaned CSV dataset, ensuring uninterrupted access to the dashboard.
+![Streamlit Dashboard](screenshots/streamlit_dashboard.png)
 
+The application first attempts to connect to a MySQL database using environment variables. If a database connection is unavailable, such as during cloud deployment, it automatically loads the cleaned CSV dataset as a fallback.
 ---
 
 # ☁️ Deployment
