@@ -15,9 +15,21 @@ The project covers the complete data analytics lifecycle:
 - Data Cleaning
 - Exploratory Data Analysis (EDA)
 - Feature Engineering
-- SQL Analysis
-- Business Intelligence Dashboard
-- Interactive Web Application
+- SQL Business Analysis
+- Power BI Dashboard Development
+- Interactive Streamlit Web Application
+- Cloud Deployment
+
+## ✨ Project Highlights
+
+- Built an end-to-end retail analytics solution using **Python, MySQL, SQL, Power BI, and Streamlit**.
+- Performed data cleaning, transformation, feature engineering, and exploratory data analysis using **Python and Pandas**.
+- Developed **45+ SQL queries** covering business analysis, aggregations, window functions, ranking functions, running totals, and CTEs.
+- Created **three interactive Power BI dashboards** covering executive performance, regional analysis, and customer & product insights.
+- Added dynamic filters for **Year, Month, Sales Channel, and Region** to enable focused analysis.
+- Analyzed revenue, profit, customers, products, regions, states, sales channels, and monthly order trends.
+- Developed and deployed an interactive **Streamlit application** with MySQL connectivity and CSV fallback support.
+- Organized the project into separate folders for **data, notebooks, SQL, Power BI, screenshots, and Streamlit** for better project structure and reproducibility.
 
 ---
 
@@ -169,7 +181,7 @@ The Power BI report contains three interactive dashboards designed to provide in
 
 ![Customer & Product Analysis](screenshots/powerbi_dashboard_3.png)
 
-
+> 💡 All KPIs and visualizations are dynamically updated based on the selected Year, Month, Sales Channel, and Region filters, enabling users to perform focused and interactive analysis.
 
 
 ---
@@ -208,13 +220,16 @@ This allows the dashboard to work seamlessly in both local and cloud environment
 
 ---
 
-# 📌 Key Insights
+## 📌 Key Insights
 
-- Identified high-performing products based on revenue and profit.
-- Compared regional sales performance across the United States.
-- Analyzed customer purchasing behavior.
-- Evaluated monthly sales and profit trends.
-- Built interactive dashboards to support business decision-making.
+- Built interactive dashboards with dynamic slicers for **Year, Month, Sales Channel, and Region**, allowing users to drill down into specific business segments.
+- Analyzed sales performance across **regions and states** to identify geographic differences in revenue and profitability.
+- Compared **revenue and profit by region** to evaluate regional business performance.
+- Identified and ranked **top-performing and lower-performing states** based on revenue.
+- Analyzed **customer and product performance** using revenue and profit rankings.
+- Compared revenue contribution across **Wholesale, Distributor, and Export** sales channels.
+- Evaluated monthly order trends to understand changes in customer purchasing activity over time.
+- Used **SQL, Power BI, and Streamlit** to create an end-to-end analytics solution that supports interactive business analysis and data-driven decision-making.
 
 ---
 
@@ -263,14 +278,12 @@ streamlit run streamlit/app.py
 
 ---
 
-# 📬 Contact
+## 📬 Contact
 
-**Vanshika Jain**
-
+**Vanshika Jain**  
 MCA Student | Aspiring Data Analyst
 
-**GitHub:** https://github.com/jainvanshika21
+- 🔗 [GitHub](https://github.com/jainvanshika21)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/vanshika-jain-17007128a/)
 
----
-
-⭐ **If you found this project helpful, consider giving it a star!**
+⭐ If you found this project helpful, consider giving it a star!
